@@ -1,5 +1,5 @@
 import pandas as pd  # pip install pandas openpyxl
-import plotly.express as px  # pip install plotly-express
+import plotly.express as px
 import streamlit as st  # pip install streamlit
 from streamlit_option_menu import option_menu
 from PIL import Image
