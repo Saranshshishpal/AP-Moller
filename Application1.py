@@ -3,7 +3,6 @@ import plotly.express as px
 import streamlit as st  # pip install streamlit
 from streamlit_option_menu import option_menu
 from PIL import Image
-import Welcome
 import base64
 
 img = Image.open("maersk1.png")
