@@ -1,5 +1,5 @@
 import pandas as pd  # pip install pandas openpyxl
-import plotly.express as px
+import plotly.express as px  # pip install plotly-express
 import streamlit as st  # pip install streamlit
 from streamlit_option_menu import option_menu
 from PIL import Image
@@ -105,17 +105,17 @@ if nav == "Ideas":
         with col1:
             Idea_Description = df3.loc[df3.Idea == Idea2]["Idea"].iloc[0]
             st.subheader("Idea Description")
-            st.info(f'\n\n{Idea_Description}')
+            st.write(f'\n\n{Idea_Description}')
 
             #Solution Approach
             Solution_Approach= df3.loc[df3.Idea == Idea2]["Solution Approach"].iloc[0]
             st.subheader("Solution Approach")
-            st.info(f'\n\n {Solution_Approach}')
+            st.write(f'\n\n {Solution_Approach}')
 
              #Remarks
             Remarks = df3.loc[df3.Idea == Idea2]["Remarks"].iloc[0]
             st.subheader("Remarks")
-            st.info(f'\n\n {Remarks}')
+            st.write(f'\n\n {Remarks}')
 
            
 
@@ -123,45 +123,45 @@ if nav == "Ideas":
             #Idea Proposed Solution
             Proposed_solution = df3.loc[df3.Idea == Idea2]["Proposed Solution"].iloc[0]
             st.subheader("Proposed Solution")
-            st.info(f'\n\n {Proposed_solution}')
+            st.write(f'\n\n {Proposed_solution}')
 
             #Existing process if any
             Existing_process= df3.loc[df3.Idea == Idea2]["Existing Process (if any)"].iloc[0]
             st.subheader("Existing process")
-            st.info(f'\n\n {Existing_process}')
+            st.write(f'\n\n {Existing_process}')
 
              #Engagement
             Engagement_1 = df3.loc[df3.Idea == Idea2]["Engagement Name"].iloc[0]
             st.subheader("Engagement")
-            st.info(f'\n\n {Engagement_1}')
+            st.write(f'\n\n {Engagement_1}')
             
 
         with col3:
                 #TL/PM Name
             TL_Name = df3.loc[df3.Idea == Idea2]["TL/PM Name"].iloc[0]
             st.subheader("TL/PM Name")
-            st.info(f'\n\n {TL_Name}')
+            st.write(f'\n\n {TL_Name}')
 
             #Scope
             Scope_= df3.loc[df3.Idea == Idea2]["Scope"].iloc[0]
             st.subheader("Scope")
-            st.info(f'\n\n {Scope_}')
+            st.write(f'\n\n {Scope_}')
 
             #Business Benefits
             Business_Benefits= df3.loc[df3.Idea == Idea2]["Business Benefits"].iloc[0]
             st.subheader("Business Benefits")
-            st.info(f'\n\n {Business_Benefits}')
+            st.write(f'\n\n {Business_Benefits}')
 
         with col4:
             #Estimated Customer Savings (Integible saving) (in USD)
             Estimated_Customer_SavingI = df3.loc[df3.Idea == Idea2]["Estimated Customer Savings (Integible saving) (in USD)"].iloc[0]
             st.subheader("Estimated Customer Savings (Integible saving) (in USD)")
-            st.info(f'\n\n {Estimated_Customer_SavingI}')
+            st.write(f'\n\n {Estimated_Customer_SavingI}')
 
             #Estimated Customer Savings (in USD)
             Estimated_Customer_Saving = df3.loc[df3.Idea == Idea2]["Estimated Customer Savings (in USD)"].iloc[0]
             st.subheader("Estimated Customer Savings (in USD)")
-            st.info(f'\n\n ${Estimated_Customer_Saving}')
+            st.write(f'\n\n ${Estimated_Customer_Saving}')
 
            
   
@@ -178,67 +178,67 @@ if nav == "Ideas":
         with col1:
             Idea_Description = df3.loc[df3.Idea == Idea2]["Idea"].iloc[0]
             st.subheader("Idea Description")
-            st.info(f'\n\n{Idea_Description}')
+            st.write(f'\n\n{Idea_Description}')
 
             #Solution Approach
             Solution_Approach= df3.loc[df3.Idea == Idea2]["Solution Approach"].iloc[0]
             st.subheader("Solution Approach")
-            st.info(f'\n\n {Solution_Approach}')
+            st.write(f'\n\n {Solution_Approach}')
 
              #Remarks
             Remarks = df3.loc[df3.Idea == Idea2]["Remarks"].iloc[0]
             st.subheader("Remarks")
-            st.info(f'\n\n {Remarks}')
+            st.write(f'\n\n {Remarks}')
 
 
         with col2:
             #Idea Proposed Solution
             Proposed_solution = df3.loc[df3.Idea == Idea2]["Proposed Solution"].iloc[0]
             st.subheader("Proposed Solution")
-            st.info(f'\n\n {Proposed_solution}')
+            st.write(f'\n\n {Proposed_solution}')
 
             #Existing process if any
             Existing_process= df3.loc[df3.Idea == Idea2]["Existing Process (if any)"].iloc[0]
             st.subheader("Existing process")
-            st.info(f'\n\n {Existing_process}')
+            st.write(f'\n\n {Existing_process}')
 
             #Engagement
             Engagement_1 = df3.loc[df3.Idea == Idea2]["Engagement Name"].iloc[0]
             st.subheader("Engagement")
-            st.info(f'\n\n {Engagement_1}')
+            st.write(f'\n\n {Engagement_1}')
 
         with col3:
              #TL/PM Name
             TL_Name = df3.loc[df3.Idea == Idea2]["TL/PM Name"].iloc[0]
             st.subheader("TL/PM Name")
-            st.info(f'\n\n {TL_Name}')
+            st.write(f'\n\n {TL_Name}')
 
             #Scope
             Scope_= df3.loc[df3.Idea == Idea2]["Scope"].iloc[0]
             st.subheader("Scope")
-            st.info(f'\n\n {Scope_}')
+            st.write(f'\n\n {Scope_}')
 
             #Business Benefits
             Business_Benefits= df3.loc[df3.Idea == Idea2]["Business Benefits"].iloc[0]
             st.subheader("Business Benefits")
-            st.info(f'\n\n {Business_Benefits}')
+            st.write(f'\n\n {Business_Benefits}')
 
 
             #ppt Recieved
             PPT_Received = df3.loc[df3.Idea == Idea2]["PPT Received"].iloc[0]
             st.subheader("PPT Recieved")
-            st.warning(f'\n\n {PPT_Received}')
+            st.write(f'\n\n {PPT_Received}')
 
         with col4:
             #Estimated Customer Savings (Integible saving) (in USD)
             Estimated_Customer_SavingI = df3.loc[df3.Idea == Idea2]["Estimated Customer Savings (Integible saving) (in USD)"].iloc[0]
             st.subheader("Estimated Customer Savings (Integible saving) (in USD)")
-            st.info(f'\n\n {Estimated_Customer_SavingI}')
+            st.write(f'\n\n {Estimated_Customer_SavingI}')
 
             #Estimated Customer Savings (in USD)
             Estimated_Customer_Saving = df3.loc[df3.Idea == Idea2]["Estimated Customer Savings (in USD)"].iloc[0]
             st.subheader("Estimated Customer Savings (in USD)")
-            st.info(f'\n\n ${Estimated_Customer_Saving}')
+            st.write(f'\n\n ${Estimated_Customer_Saving}')
 
            
             
