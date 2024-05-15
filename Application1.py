@@ -105,7 +105,7 @@ if nav == "Ideas":
         with col1:
             Idea_Description = df3.loc[df3.Idea == Idea2]["Idea"].iloc[0]
             st.subheader("Idea Description")
-            st.warninng(f'\n\n{Idea_Description}')
+            st.warning(f'\n\n{Idea_Description}')
 
             #Solution Approach
             Solution_Approach= df3.loc[df3.Idea == Idea2]["Solution Approach"].iloc[0]
